@@ -2,6 +2,10 @@
 
 Config files for the shell and terminal apps
 
+## Shell
+
+- [zsh](https://en.wikipedia.org/wiki/Z_shell)
+
 ## Terminal Emulator
 
 - [kitty](https://github.com/kovidgoyal/kitty) (fast, feature-rich terminal)
