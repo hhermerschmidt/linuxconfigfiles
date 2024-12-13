@@ -18,6 +18,10 @@ Config files for the shell and terminal apps
 - [fzf](https://github.com/junegunn/fzf) (fuzzy finder; used by zoxide)
 - [bat](https://github.com/sharkdp/bat) (`cat` with syntax highlighting and Git integration)
 
-## Resources
+## Text Editor
+
+- [vim](https://github.com/vim/vim)
+
+## References
 
 - [Modern Unix Tools](https://github.com/ibraheemdev/modern-unix)
