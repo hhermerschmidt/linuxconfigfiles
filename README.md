@@ -25,3 +25,7 @@ Config files for the shell and terminal apps
 ## References
 
 - [Modern Unix Tools](https://github.com/ibraheemdev/modern-unix)
+
+## Credits
+
+- Most (or all) config files were provided by [Jannick Wolters](https://github.com/jawolters) (many thanks! 💙) - and are adapted eventually. 
