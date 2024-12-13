@@ -1,6 +1,6 @@
 # zoxide
 
-A smarter cd command
+A smarter `cd` command
 
 - Set up alias in `zshrc` and initialise zoxide
 
