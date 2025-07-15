@@ -2,13 +2,17 @@
 
 Config files for the shell and terminal apps
 
-## Shell
-
-- [zsh](https://en.wikipedia.org/wiki/Z_shell)
-
 ## Terminal Emulator
 
 - [kitty](https://github.com/kovidgoyal/kitty) (fast, feature-rich terminal)
+
+## Shell
+
+- [zsh](https://en.wikipedia.org/wiki/Z_shell) 
+
+## Shell Prompt
+
+- [starship](https://github.com/starship/starship) (customizable prompt)
 
 ## Command Line Tools
 
