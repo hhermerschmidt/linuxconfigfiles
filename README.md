@@ -16,15 +16,36 @@ Config files for the shell and terminal apps
 
 ## Command Line Tools
 
+### File Mananger
+
 - [ranger](https://github.com/ranger/ranger) (console file manager)
+- [Yazi](https://github.com/sxyazi/yazi)
+
+### Basic Commands
+
 - [eza](https://github.com/eza-community/eza) (modern `ls` command)
 - [zoxide](https://github.com/ajeetdsouza/zoxide) (smarter `cd` command)
 - [fzf](https://github.com/junegunn/fzf) (fuzzy finder; used by zoxide)
 - [bat](https://github.com/sharkdp/bat) (`cat` with syntax highlighting and Git integration)
+- [fuck](https://github.com/nvbn/thefuck) (corrects typing errors)
+
+### Searching
+
+- [atuin](https://github.com/atuinsh/atuin) (magical shell history)
+- [fd](https://github.com/sharkdp/fd) (fast and user-friendly `find`)
+- [fzf](https://github.com/junegunn/fzf) (fuzzy finder; used by zoxide)
+
 ### Text Processing
 
 - [delta](https://github.com/dandavison/delta) (modern `diff` command)
 
+### Version Control
+
+- [lazygit](https://github.com/jesseduffield/lazygit) (`git` TUI)
+
+### Task Runner
+
+- [just](https://github.com/casey/just)
 
 ## Text Editor
 
