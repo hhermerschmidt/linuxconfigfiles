@@ -2,11 +2,11 @@
 
 Config files for the shell and terminal apps
 
-## Terminal Emulator
+## Terminal Emulators
 
 - [kitty](https://github.com/kovidgoyal/kitty) (fast, feature-rich terminal)
 
-## Shell
+## Shells
 
 - [bash](https://www.gnu.org/software/bash/)
 - [zsh](https://en.wikipedia.org/wiki/Z_shell)
@@ -23,7 +23,6 @@ Config files for the shell and terminal apps
 
 - [eza](https://github.com/eza-community/eza) (modern `ls` command)
 - [zoxide](https://github.com/ajeetdsouza/zoxide) (smarter `cd` command)
-- [fzf](https://github.com/junegunn/fzf) (fuzzy finder; used by zoxide)
 - [bat](https://github.com/sharkdp/bat) (`cat` with syntax highlighting and Git integration)
 - [fuck](https://github.com/nvbn/thefuck) (corrects typing errors)
 
@@ -35,6 +34,7 @@ Config files for the shell and terminal apps
 
 ### Text Processing
 
+- [ripgrep](https://github.com/BurntSushi/ripgrep) (regex searcher)
 - [delta](https://github.com/dandavison/delta) (modern `diff` command)
 
 ### Version Control
@@ -44,6 +44,10 @@ Config files for the shell and terminal apps
 ### Task Runner
 
 - [just](https://github.com/casey/just)
+
+### Benchmarking
+
+- [hyperfine](https://github.com/sharkdp/hyperfine) (command-line benchmarking tool)
 
 ## Text Editor
 
@@ -55,4 +59,4 @@ Config files for the shell and terminal apps
 
 ## Credits
 
-- Most (or all) config files were provided by [Jannick Wolters](https://github.com/jawolters) (many thanks! 💙) - and are adapted eventually. 
+- Many config files were provided by [Jannick Wolters](https://github.com/jawolters) (many thanks! 💙) - and have been adapted eventually.
