@@ -8,10 +8,7 @@ Config files for the shell and terminal apps
 
 ## Shell
 
-- [zsh](https://en.wikipedia.org/wiki/Z_shell) 
-
-## Shell Prompt
-
+- [zsh](https://en.wikipedia.org/wiki/Z_shell)
 - [starship](https://github.com/starship/starship) (customizable prompt)
 
 ## Command Line Tools
@@ -32,4 +29,4 @@ Config files for the shell and terminal apps
 
 ## Credits
 
-- Most (or all) config files were provided by [Jannick Wolters](https://github.com/jawolters) (many thanks! 💙) - and are adapted eventually. 
+- Most (or all) config files were provided by [Jannick Wolters](https://github.com/jawolters) (many thanks! 💙) - and are adapted eventually.
