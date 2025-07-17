@@ -1,9 +1,15 @@
-# zsh
+# zsh (Z shell)
 
-Z shell
+## Plugins
+
+- [Using ZSH without OMZ](https://dev.to/hbenvenutti/using-zsh-without-omz-4gch)
+- Plugins go into `~/.config/plugins` and need to get sourced in `~/.zshrc`
+- [alias-tips](https://github.com/djui/alias-tips)
+
+## Startup order
 
 > Default behavior dictates the following order for ZSH startup files:
-> 
+>
 > - `/etc/zshenv`
 > - `~/.zshenv`
 > - `/etc/zprofile` (if login shell)
@@ -12,9 +18,9 @@ Z shell
 > - `~/.zshrc`      (if interactive)
 > - `/etc/zlogin`   (if login shell)
 > - `~/.zlogin`     (if login shell)
-> 
+>
 > **Notes:**
-> 
+>
 > - `zshenv` is the place to set *env*ironment variables
 > - `zshrc` is the place for aliases, functions etc
 >
