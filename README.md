@@ -21,6 +21,10 @@ Config files for the shell and terminal apps
 - [zoxide](https://github.com/ajeetdsouza/zoxide) (smarter `cd` command)
 - [fzf](https://github.com/junegunn/fzf) (fuzzy finder; used by zoxide)
 - [bat](https://github.com/sharkdp/bat) (`cat` with syntax highlighting and Git integration)
+### Text Processing
+
+- [delta](https://github.com/dandavison/delta) (modern `diff` command)
+
 
 ## Text Editor
 
