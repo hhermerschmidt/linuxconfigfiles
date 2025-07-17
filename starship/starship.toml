@@ -2,12 +2,15 @@ format = """
 [](#a3aed2)\
 [\ue712 ](bg:#a3aed2 fg:#090c0c)\
 $shell\
+$jobs\
 [](bg:#769ff0 fg:#a3aed2)\
 $directory\
 [](fg:#769ff0 bg:#394260)\
 $git_branch\
 $git_status\
 ${custom.perforce}\
+${custom.buildmode}\
+${custom.perforce_status}\
 [](fg:#394260 bg:#212736)\
 $nodejs\
 $python\
@@ -19,13 +22,17 @@ $time\
 [ ](fg:#1d2230)\
 \n$character"""
 
-
 [shell]
 disabled = false
 bash_indicator = "🐢"
 zsh_indicator = "🚀"
 style = "bg:#a3aed2 fg:#090c0c"
 format = '[$indicator]($style)'
+
+[jobs]
+symbol = "⚙️"
+style = "bg:#a3aed2 fg:#090c0c"
+format = "[ $symbol]($style)"
 
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
@@ -38,6 +45,8 @@ truncation_symbol = "…/"
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "
+"simulation" = "🌊"
+"stress" = "🛠️"
 
 [git_branch]
 symbol = ""
@@ -50,10 +59,24 @@ format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
 
 [custom.perforce]
 symbol = "🤪"
-command = 'echo "$(p4 opened | wc -l) 📝"'
+command = 'echo $P4CLIENT'
+#command = 'echo "$(p4 opened | wc -l) 📝"'
 style = "bg:#394260"
 format = '[ $symbol $output]($style)'
-when = '[[ -n "$P4CLIENT" ]]'
+when = 'test -n "$P4CLIENT"'
+
+[custom.perforce_status]
+symbol = "📝"
+command = "p4 opened | wc -l"
+style = "bg:#394260"
+format = '[ $symbol $output]($style)'
+when = 'test -n "$P4CLIENT" && test "$(p4 opened | wc -l)" -ne "0"'
+
+[custom.buildmode]
+command = 'test "$BUILDMODE_SHORT" = "D" && echo "🐞" || echo "⚡"'
+style = "bg:#394260"
+format = '[ $output]($style)'
+when = 'test -n "$BUILDMODE"'
 
 [nodejs]
 symbol = ""
