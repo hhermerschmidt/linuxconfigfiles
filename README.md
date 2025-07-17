@@ -8,6 +8,7 @@ Config files for the shell and terminal apps
 
 ## Shell
 
+- [bash](https://www.gnu.org/software/bash/)
 - [zsh](https://en.wikipedia.org/wiki/Z_shell) 
 
 ## Shell Prompt
