@@ -1,0 +1,69 @@
+# Common setup for bash and zsh shell
+
+export HOST="$(echo $HOSTNAME | cut -d. -f1)"
+export LANG=en_US.UTF-8
+
+export EDITOR='vim'
+export DIFFPROG='meld'
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export TERM=xterm-kitty
+
+export REPO_CACHE=/data/p4ws/repo_cache
+
+export PATH=$REPO_CACHE/mature/intelmpi_sdk/2021.13.0/LINUX64_217/bin:$PATH
+export PATH=$REPO_CACHE/software/intel/oneAPI/2024.2.0/linux/compiler/2024.2/bin:$PATH
+export PATH=$REPO_CACHE/software/kitware/cmake/cmake-3.31.1-Linux-x86_64/bin:$PATH
+export PATH=$STORE_REPO/software/jabref/jabref/5.6/linux/bin:$PATH
+export PATH=$STORE_REPO/software/perforce/helix/default/linux/p4v/bin:$PATH
+export PATH=$STORE_REPO/software/roguewave/totalview/latest/linux/bin:$PATH
+export PATH=$STORE_REPO/software/valgrind.org/valgrind/latest/bin:$PATH
+export PATH=/opt/linaro/forge/24.0.2/bin:$PATH
+
+export PATH=$HOME/.local/bin:${PATH} # local user commands
+#export PATH=$HOME/Software/ParaView-5.11.0/bin/:$PATH # FIXME
+
+export LD_LIBRARY_PATH=$REPO_CACHE/mature/intelmpi_rt/2021.12.0/LINUX64_217/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$REPO_CACHE/software/intel/oneAPI/2024.2.0/linux/compiler/2024.2/lib:$LD_LIBRARY_PATH
+
+export CMAKE_ROOT=$REPO_CACHE/software/kitware/cmake/cmake-3.31.1-Linux-x86_64/
+export VALGRIND_LIB=$STORE_REPO/valgrind.org/valgrind/latest/libexec/valgrind
+
+export _ZO_FZF_OPTS="--no-sort --keep-right --height=50% --info=inline --layout=reverse --exit-0 --select-1 --bind=ctrl-z:ignore --preview='\command exa --long --all {2..}' --preview-window=right"
+export FZF_DEFAULT_COMMAND='rg --no-messages --files --no-ignore --hidden --follow --glob "!.git/*"'
+export FZF_DEFAULT_OPTS="--no-separator --layout=reverse --inline-info"
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# TODO: Change cargo settings to central config file
+source "$HOME/.cargo/env"
+export CARGO_REGISTRY_DEFAULT=sonatype
+export CARGO_HTTP_CHECK_REVOKE=false
+export CARGO_REGISTRIES_SONATYPE_INDEX=sparse+https://artifacts.dev.corpdir.zz/repository/cargo-proxy/
+
+export GOPROXY=https://artifacts.dev.corpdir.zz/repository/go-proxy
+export GOSUMDB=off
+
+# Added by Toolbox App
+export PATH="$PATH:/data/home/h.hermerschmidt_dev/.local/share/JetBrains/Toolbox/scripts"
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+alias ls='eza'
+alias l='eza -lbF --git --icons=auto --no-user --no-permissions --group-directories-first --git'
+alias ll='eza -lbF --git --icons=auto --group-directories-first --git'
+alias la='eza -lbaF --git --color-scale --icons=auto --group-directories-first --git'
+
+alias cat=bat
+alias fvim='vim $(fzf --preview="bat --color=always --theme=OneHalfDark --style=numbers {}")'
+
+alias valgrind="/net/store/repo/software/valgrind.org/valgrind/default/bin/valgrind"
+alias tom-dist='$tom_dir/tom-dist.sh'
+alias ddt='/opt/linaro/forge/24.0.4/bin/ddt'
+
+eval "$(thefuck --alias)"
