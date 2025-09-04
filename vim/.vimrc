@@ -31,6 +31,7 @@ Plugin 'jacoborus/tender.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'vim-airline/vim-airline'
+" Plugin 'file://data/home/h.hermerschmidt_dev/office/Repositories/vim-toml'
 call vundle#end()
 
 filetype plugin indent on
